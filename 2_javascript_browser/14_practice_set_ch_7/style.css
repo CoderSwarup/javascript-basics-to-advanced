@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+nav{
+  position: sticky;
+  display: flex;
+  background-color: hotpink;
+}
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 2px 20px;
+}
+.ing img{
+  width: 50px;
+}
+
+.hh{
+  width: 50%;
+  margin: auto;
+  height: 2000px;
+  border: 2px solid gray;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sibling parent</title>
+</head>
+
+<body>
+  <div>
+    <div class="first"> </div>
+    <div class="second"> </div>
+  </div>
+
+
+
+
+  <script>
+    console.log(document.body.firstChild)
+    let a = document.body.firstChild
+
+    console.log(a.parentNode)
+    console.log(a.parentElement)
+
+
+    console.log(a.firstChild.nextSibling)
+  </script>
+
+</body>
+
+</html>

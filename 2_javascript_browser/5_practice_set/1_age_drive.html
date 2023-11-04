@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+hello your age is : 
+
+<script>
+let runagain = true;
+
+while(runagain){
+  let a = prompt("Enter your age :")
+  a= Number.parseInt(a)
+  document.write(a)
+  if(a>18){
+    alert("you can drive")
+  }
+  else{
+    alert("you can't drive")
+
+  }
+  runagain = confirm("you want to run again")
+}
+</script>
+
+</body>
+
+</html>

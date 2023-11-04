@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: wheat;
+}
+
+.table{
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  border-spacing: 30px;
+  border: 2px dotted red;
+  
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  border-bottom: 2px double black;
+  box-shadow: 2px 2px blue;
+  border-radius: 20px;
+}
