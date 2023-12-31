@@ -1,0 +1,344 @@
+body {
+    font-size: 15pt;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('/1_cricket_website/img/pexels-sergio-souza-2039938.jpg');
+        background-size: 100vw ;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.head{
+margin-top: 15px;
+background-color: skyblue;
+}
+/* left */
+.left{
+ position: absolute;
+ width: 200px;
+ display: inline-block;
+ color: black;
+ height: 60px;
+}
+.left img{
+  display: block;
+  width: 55px;
+  filter: invert(0%)
+}
+.logo-text{
+  display: inline-block;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  float: right;
+  top: 20px;
+  right: 0px;
+  margin-left: 2px;
+}
+/* mid  */
+.mid{
+  display: block;
+  width: 55%;
+   color: black;
+   margin:auto;
+   justify-content: center;
+}
+
+.navbar{
+  display: inline-block;
+}
+.navbar li{
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+.navbar ul li a:hover , .navbar ul li a:active{
+  text-decoration: underline;
+  color: blue;
+}
+
+
+/* right */
+.right{
+   color: white;
+   position: absolute;
+   right: 12px;
+   top: 25px;
+   width: 200px;
+  
+}
+
+.right button{
+  background-color: #438CDB;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn2{
+  width: 80px;
+  margin-left: 5px;
+}
+.right button:hover{
+  transform: scale(1.1)
+}
+
+.form{
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 60px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  color: white;
+  width: 40%;
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+}
+.for lable{
+  padding: 30px;
+}
+.fname{
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+#name{
+  width: 50%;
+}
+#mobile{
+  width: 50%;
+}
+#email{
+  width: 49.5%;
+}
+input[type="email"]{
+  margin-left: 0.1px;
+}
+.fname2{
+  margin-left: 10px;
+}
+.sbtn{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.course{
+  text-decoration: underline;
+}
+
+.images{
+  background-color:#00000080;
+  border-radius: 20px;
+  display: inline-block;
+  float: right;
+  margin-top: 26px;
+  margin-right: 30px;
+  color: white;
+  border: 2px solid black;
+  width: 50%;
+  height: 40%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.headd{
+   display: block;
+  background-color: coral;
+}
+.im1{
+  width: 200px;
+  
+}
+.im2{
+  width: 200px;
+  margin-right: 10px;
+}
+.im3{
+  width: 180px;
+}
+.im4{
+  width: 200px;
+  margin-left: 70px;
+}
+
+
+.main{
+  border: 2px solid red;
+  width: 90%;
+  margin: 140px auto 50px auto;
+  text-align: center;
+}
+
+
+.main{
+  background-color: coral;
+  border: 2px inset orangered;
+  border-radius: 20px;
+}
+.main-head{
+  background-color: #D34CEC
+}
+
+.up{
+  margin: auto;
+}
+
+.card1{
+  display: inline-block;
+  background-color: #C1C1C1;
+  width: 390px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 15px  black;
+}
+.card1:hover{
+  transform: scale(1.04);
+}
+.card2{
+  float: right;
+  margin-right: 30px;
+  background-color: #C1C1C1;
+  width: 390px;
+  border: 2px solid black;  
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 15px black;
+
+}
+.card2:hover {
+  transform: scale(1.04);
+}
+.c1{
+  margin: 5px auto;
+   font-size: 40px;
+   background-color: yellow;
+   border-radius: 20px;
+   width: 200px;
+  
+}
+.c1:hover{
+  background-color: red;
+  color: white;
+}
+
+
+.img2{
+  width: 350px;
+}
+
+
+#TEAM{
+  margin: 0px auto;
+  width: 90%;
+  text-align: center;
+  background-color: royalblue;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#TEAM h2{
+  margin: 15px auto 10px auto;
+  font-weight: bold;
+  font-size: 50px;
+  width: 300px;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: #0F3CC7;
+  
+}
+.c-im{
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 360px;
+  box-shadow: 8px 8px 8px skyblue;
+}
+.c-im:hover{
+  transform: scale(1.03);
+  transition: all 1s ease-in-out;
+}
+.t-p{
+  margin: 15px auto;
+  background-color: coral;
+  font-size: 60px;
+   width: 400px;
+   border: 2px solid black;
+   border-radius: 20px;
+   text-shadow: 3px 3px white;
+}
+#info{
+  color: white;
+  font-size: 38px;
+  text-shadow: 4px 4px black;
+}
+
+#news{
+  scroll-behavior: smooth;
+  margin: 20px auto;
+  width: 90%;
+  
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+#news p{
+  text-align: center;
+}
+.n1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.mm{
+  margin: 12px auto;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.ee{
+  font-size: 30px;
+}
+
+
+
+/* footer */
+
+.foot{
+  width: 100%;
+  
+  background-color: #424242;
+  color: flex;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+.c{
+  background-color: none;
+  color: black;
+}
+.cc{
+  margin-right: 70px;
+  color: black;
+ 
+}
+.cc li{
+  list-style: none;
+  
+}
+
+.bottom{
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+  padding: 2px;
+  
+}

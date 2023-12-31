@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  background-color: skyblue;
+  color: wheat;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 25px;
+}
+body{
+  background-color: #000000;
+}
+/* nav bar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000BA;
+}
+.nav1{
+  display: flex;
+  justify-content: space-around;
+   justify-content: center;
+  align-items: center;
+
+}
+nav{
+  position: sticky;
+  margin-top: 1.2vh;
+  margin-left: 0px;
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  padding: 10px 40px;
+  color: white;
+  text-decoration: none; 
+}
+.nav2 img{
+  margin-top: 1.1vh;
+  margin-right: 30px;
+  width: 9vw;
+  filter: invert(100%)
+}
+/* main */
+/* home */
+#home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:3px 200px;
+  height: 520px;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  background: url('images/hero_image.png') no-repeat center center/cover;
+  border-bottom: 1px solid black;
+  height: 642px;
+  top:0px;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+  opacity:0.69;
+  filter: invert(10%);
+}
+#home h1{
+  color: white;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+#home p{
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Bree Serif', serif;
+}
+#home button{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  background-color: orangered;
+  color: white;
+  width: 25vw;
+  border: none;
+  border: 2px solid darkorange;
+  border-radius: 20px;
+}
+#home button:hover{
+  text-shadow: 1px 1px black;
+  transform: scale(1.1);
+  background-color: #FF955A;
+  transition: 1s ease-in-out;
+  border:2px solid black;
+}
+.ani{
+  animation-name: blink;
+  animation-delay: 0s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+   
+  }
+  50%{
+    opacity: 0.5;
+    
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.3);
+    transform: skew(5deg);
+  }
+  100%{
+    opacity: 0;
+  }
+}
+/* service */
+#service{
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: greenyellow;
+  text-shadow: 3px 3px green;
+}
+.service2{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.s1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30vw;
+  background-color: #A5F1AE;
+  border: 3px solid green;
+  border-radius: 20px;
+  box-shadow: 4px 4px greenyellow;
+}
+.s1:hover{
+  transform: scale(1.06);
+  transition: .5s ease-in-out;
+}
+.s1-img{
+  width: 15vw;
+}
+.s1 p{
+  padding: 0px 10px;
+}
+
+
+/* cline */
+.c-h2{
+  color: orangered;
+  font-size: 3rem;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 3px 3px orange;
+}
+#client::before{
+    content: "";
+    position: absolute;
+  background: url('/2_resposive_food_website/client img/38e8a81543c479e58f523d5b21c0208d.jpg') no-repeat center center/cover;
+    border-bottom: 1px solid black;
+    height: 525px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+#client{
+  margin: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 525px;
+}
+#client img{
+  width: 15vw;
+  padding: 0px 40px;
+  border-radius: 60px;
+}
+#client img:hover{
+  transform: rotate(360deg);
+  transition: 3s ease-in-out;
+}
+
+/* contac */
+.contcat-h2{
+  color: whitesmoke;
+  margin: 20px auto;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 3px 3px darkorange,4px 4px seagreen;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: url('/2_resposive_food_website/images/depositphotos_74468913-stock-photo-contact-us-icons-on-cubes.jpg') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+#contact form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+#contact form input{
+  width: 60%;
+  height: 25px;
+  margin: 10px 0px;
+}
+#contact form #qu{
+  width: 60%;
+}
+#contact form label{
+  color: lightgreen;
+  font-size: 1.2rem;
+  
+}
+#contact form button{
+  margin-top: 10px;
+  font-size: 1.1rem;
+  background-color: orangered;
+  color: white;
+  width: 25vw;
+  border: none;
+  border-radius: 20px;
+  text-shadow: 2px 2px black;
+  border: 2px solid orange;
+  }
+#contact form button:active{
+ background-color: orange;
+ transition: 0.3s ease-in-out;
+ }
+/* Footer Section */
+
+footer {
+  background-color: #fff0db;
+}
+.link_lists h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.link_lists ul {
+  list-style: none;
+}
+.link_lists ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.news_letter h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.news_letter input {
+  padding: 5px 40px;
+  margin-bottom: 10px;
+}
+.footer_container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon_container {
+  display: flex;
+  gap: 15px;
+  font-size: 32px;
+}
+.copy{
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy p{
+  padding: 10px;
+} 
+
+.chat{
+  background-color: lime;
+  width: 7vw;
+  height: 7vw;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  color: black;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 800px){
+  nav{
+    position: sticky;
+  }
+  .nav1{
+    margin: 0px auto;
+    flex-direction: column;
+    }
+  nav ul li a {
+    padding: 5px 13px;
+    color: white;
+    text-decoration: none;
+  }
+  .nav2{
+   display: none;
+  }
+  /* home */
+  #home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:3px 20px;
+  height: 450px;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  background: url('images/hero_image.png') no-repeat center center/cover;
+  border-bottom: 1px solid black;
+  height: 500px;
+  top:0px;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+  opacity:0.69;
+  filter: invert(10%);
+}
+ #home h1{
+   font-size: 30px;
+ }
+ #home button{
+font-size: 0.8rem;
+border: 2px solid forestgreen;
+border-radius: 20px;
+}
+#home button:hover{
+background-color: lawngreen;
+border: 2px solid white;
+transition: 0.5s ease-in-out;
+}
+
+
+/* service */
+#service{
+  font-size: 2rem;
+}
+.service2{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.s1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 300px;
+  background-color: #A5F1AE;
+  border: 3px solid green;
+  border-radius: 20px;
+  box-shadow: 4px 4px greenyellow;
+  margin-top: 20px;
+}
+.s1-img{
+  width: 130px;
+}
+
+/* client */
+.c-h2{
+  font-size: 2rem;
+   text-shadow: 1px 1px orange;
+
+}
+
+
+/* contact */
+#contact form label {
+  color: lightgreen;
+  font-size: 0.5rem;
+  padding-top: 10px;
+  }
+  #contact form input{
+  width: 80%;
+  height: 20px;
+}
+#contact form #qu {
+  width: 80%;
+}
+.contcat-h2{
+  font-size: 2rem;
+  text-shadow: 2px 2px darkorange,2px 2px seagreen;
+}
+/* footer */
+ .footer_container{
+   flex-direction: column;
+ }
+}

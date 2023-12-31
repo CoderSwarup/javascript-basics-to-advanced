@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: grid;
+  grid-gap:0rem;
+  grid-template-areas: 
+  'nav2 nav1 nav1 nav1'
+  'nav2 main main main'
+  'nav2 main main main'
+  'nav2 main main main';
+  grid-template-rows: 90px;
+}
+::selection{
+  background-color: hotpink;
+  color: black;
+}
+/* nav 1  */
+.nav1{
+  grid-area: nav1;
+  border-bottom: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img{
+  width: 20vw;
+}
+
+.center-nav {
+  display: flex;
+}
+.search {
+  display: flex;
+}
+.search input {
+  min-width: 400px;
+  padding: 10px 20px;
+  border: 0.5px solid #ccc;
+  border: 2px solid black;
+}
+.search button {
+  border: none;
+  padding: 10px 20px;
+}
+#mic img{
+  width: 5vw;
+}
+.video_icon img{
+  width: 5vw;
+}
+.dot img{
+  width: 5vw;
+}
+#bell_icon img{
+  width: 4vw;
+}
+#avtar img{
+  width: 5vw;
+}
+/* nav 2 */
+.nav2{
+  margin-top: 0px;
+  grid-area: nav2;
+  background-color: white;
+  width: 10vw;
+  margin-left: 15px;
+}
+
+.bars img{
+  margin-top: 10px;
+  width: 60px;
+}
+.side-icons img{
+  width: 50px;
+  margin-top: 40px;
+}
+
+/* main  */
+
+.main{
+  grid-area: main;
+  width: 100vw;
+ 
+}
+.top_header{
+  display: flex;
+}
+.top_header p{
+font-size: 1.8rem;
+padding: 10px 20px;
+margin:10px 10px;
+background-color: black;
+border-radius: 50px;
+color: white;
+}
+
+.main_video{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.content{
+  margin-top: 10px;
+}
+.content img{
+  width: 320px;
+}
+.content2{
+  display: flex;
+  justify-content: space-between;
+}
+.content3{
+  display: flex;
+}
+.left img{
+  width: 60px;
+}
+.mid strong{
+  font-size: 25px;
+}
+.right img{
+  width: 50px;
+}
+
+
+.foot{
+  display: none;
+}
+/* media queries */
+@media only screen and (max-width: 786px){
+  body{
+  display: grid;
+  grid-gap:0rem;
+  grid-template-areas: 
+  'nav1 nav1'
+  'main main'
+  'main main'
+  'main main';
+  grid-template-rows: 50px;
+}
+nav{
+  padding: 0px 10px;
+  position: sticky;
+}
+.nav1{
+  justify-content: space-between;
+}
+.nav2{
+  display: none;
+}
+
+.search {
+  display: flex;
+}
+.search input {
+  display: none
+}
+.search button {
+  display: none;
+}
+#mic img{
+  width: 7vw;
+}
+.video_icon{
+  display: none;
+}
+.video_icon img{
+  width: 8vw;
+  display: none;
+}
+.dot img{
+  width: 8vw;
+}
+.dot{
+  display: none;
+}
+#bell_icon img{
+  width: 7vw;
+}
+#avtar img{
+  width: 8vw;
+}
+
+
+
+
+.top_header p{
+font-size: 0.8rem;
+}
+
+.main_video{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.content{
+  margin-top: 10px;
+  width: 100%;
+}
+.content img{
+ width: 100%;
+}
+.left img {
+  width: 60px;
+}
+.content2{
+  justify-content: space-between;
+}
+.mid{
+  margin-left: 9px;
+}
+
+.content3{
+  display: flex;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100vw;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+}
+.foot div{
+  padding: 7px 15px;
+}
+.h_icon{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.s_icon{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.s_icon img{
+  width: 27px;
+}
+.l_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}

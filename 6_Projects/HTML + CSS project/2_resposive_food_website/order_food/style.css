@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: darkblue;
+  color: white;
+}
+
+.dark-mode{
+  background-color: black;
+  color: whitesmoke;
+  content: "dark mode on";
+}
+
+/* nav */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0C1466;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  padding: 2px 30px;
+}
+
+nav ul li a:hover {
+  background-color: #FFFFFFDB;
+  color: green;
+  border-radius: 20px;
+
+}
+
+.navbar button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+}
+
+/* main 
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}*/
+
+/* service  */
+#service {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#service::before {
+  content: "";
+  position: absolute;
+  background: url('/2_resposive_food_website/images/hero_image.png') no-repeat center center/cover;
+  height: 460px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+  filter: invert(10%);
+}
+
+.srev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  color: black;
+  margin-top: -80px;
+}
+
+.text h1 {
+  font-size: 4rem;
+  color: lawngreen;
+}
+
+.text p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+
+/* order food */
+#order {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 10px 0px 30px 0px;
+}
+
+#order h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px orange;
+}
+
+#order-food {
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 92%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.left2 {
+  background-color: none;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.right2 {
+  background-color: none;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+
+}
+
+.it1 {
+  width: 80%;
+  background-color: seagreen;
+  margin: 15px;
+  border: 3px solid orangered;
+  border-radius: 30px;
+}
+
+.it1 img {
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  padding: 8px;
+}
+
+.it1 button {
+  width: 200px;
+  margin: 10px;
+  background-color: palegreen;
+  border: 2px solid red;
+  border-radius: 30px;
+  font-size: 1.7rem;
+}
+
+.it1 button:hover {
+  background-color: coral;
+  border-color: orange;
+  transition: 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 786px) {
+
+  /* mav bat */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  nav {
+    margin-top: -10px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 2px 9px;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+  /* service */
+  .srev {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+    color: lawngreen;
+  }
+
+  .text p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+
+
+  /* order food */
+  #order-food {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left2 {
+    width: 90%;
+  }
+
+  .right2 {
+    width: 90%;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAM Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header>
+  <nav>
+    <h1>SAM</h1>
+
+    <div class="search">
+      <input type="text" id="searchtxt" placeholder="Search">
+      <button type="submit">Search</button>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <div class="main">
+    <div class="container">
+      <h1>SAM Notes app</h1>
+
+      <div class="card">
+        <div class="fg">
+       <h3 class="title" >Add Tittle</h3>
+          <input id="addtitle" class="Entert addtxt" type="text" placeholder="Enter title">
+        </div>
+        <h3>Notes</h3>
+
+        <textarea placeholder="Enter a Text" name="" id="addtxt" cols="10" rows="5"></textarea>
+        <button type="submit" id="addbtn">Add Notes</button>
+      </div>
+      
+      
+      <h1 class="h">Your Notes</h1>
+      <hr>
+      
+      <div class="card2" id="notes"> 
+           <div class="c" id="notecard">
+        <h1 id="n">Note${index+1}</h1>
+        <p class="para notes">${element}</p>
+        
+        <button type="submit">Delete Note</button>
+      </div>  
+
+
+
+
+  </div>
+
+</main>
+
+<script src="main.js"></script>
+
+<body>
+
+</body>
+
+</html>
