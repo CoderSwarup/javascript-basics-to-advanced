@@ -54,6 +54,8 @@ This repository is organized into sections that cover various JavaScript topics,
 
 4. **Projects:** Apply your knowledge by working on practical projects included in the repository.
 
+5 **TypeScript** : Learn TypeScript alongside JavaScript from the official documentation - [https://www.typescriptlang
+
 ## Contributing
 
 We welcome contributions from the community. If you have additional resources, code samples, or tutorials to share, please consider contributing to this repository. Here's how you can contribute:

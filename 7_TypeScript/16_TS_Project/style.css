@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(34, 0, 97);
+  width: 100%;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form > input,
+button {
+  padding: 5px 10px;
+  background: #1c1c1c;
+  outline: none;
+
+  border: none;
+  color: #fff;
+}
+
+.Main-Container {
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.Main-Container .ProfileCard {
+  overflow: hidden;
+  width: 200px;
+  margin: 10px;
+  border: 2px solid #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.Main-Container .ProfileCard img {
+  aspect-ratio: 2/2;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  transition: all 0.4s ease;
+}
+
+.Main-Container .ProfileCard img:hover {
+  scale: 1.1;
+}
+
+.Main-Container .ProfileCard h2 {
+  text-align: left;
+  margin: 7px 0;
+}
+.Main-Container .ProfileCard a {
+  background: #fff;
+  padding: 3px 5px;
+  font-size: 14px;
+  color: #1c1c1c;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
